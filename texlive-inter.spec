@@ -1,6 +1,6 @@
 Name:		texlive-inter
-Version:	58892
-Release:	2
+Version:	68966
+Release:	1
 Summary:	The inter font face with support for LaTeX, XeLaTeX, and LuaLaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/inter
