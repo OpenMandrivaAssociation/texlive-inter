@@ -3,7 +3,7 @@ Version:	68966
 Release:	1
 Summary:	The inter font face with support for LaTeX, XeLaTeX, and LuaLaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/inter
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/inter
 License:	ofl lppl
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/inter.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/inter.doc.r%{version}.tar.xz
