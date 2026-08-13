@@ -12,7 +12,8 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/inter.r%{tl_revi
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/inter.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 This package provides LaTeX, pdfLaTeX, XeLaTeX and LuaLaTeX support for
@@ -22,3 +23,10 @@ with focus on high legibility of small-to-medium sized text on computer
 screens. The family features a tall x-height to aid in readability of
 mixed-case and lower-case text.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from inter:
+Map Inter.map
+TL_DROPIN_EOF
